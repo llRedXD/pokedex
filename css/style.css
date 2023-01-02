@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+
+div {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+div#area {
+
+    font: normal 20pt Arial;
+    background: rgb(255, 255, 255);s
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+
+}
+
+div#area-2 {
+    font: normal 20pt Arial;
+    background: rgb(255, 255, 255);s
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+div#area-3 {
+    font: normal 20pt Arial;
+    background: rgb(255, 255, 255);s
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
