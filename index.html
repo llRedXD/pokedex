@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="favicons/favicon3.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicons/favicon3.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Pokedex</title>
-</head>
-<body>
-    <div id="area"></div>
-    <div id="area-2"></div>
-    <div id="area-3"></div>
-
-    <p><strong>Charmander</strong></p>
-
-
+  </head>
+  <body>
+    <div id="area" style="display: block">
+      <div id="pokemon"></div>
+    </div>
 
     <script>
+      for (let i = 1; i <= 151; i++) {
+        let pokemon = document.getElementById("pokemon");
 
+        let img = document.createElement("img");
+        img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
+        let p = document.createElement("p");
 
+        let data = teste()
+        fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`)
+          .then((response) => response.json())
+          .then((data) => {
+              p.innerHTML = i + " - " + data.name;
+              pokemon.appendChild(p);
+              pokemon.appendChild(img);
+          });
+
+      }
+
+      function teste () {
+        
+      }
     </script>
-</body>
+  </body>
 </html>
