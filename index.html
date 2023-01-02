@@ -23,7 +23,6 @@
         img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
         let p = document.createElement("p");
 
-        let data = teste()
         fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`)
           .then((response) => response.json())
           .then((data) => {
@@ -32,10 +31,6 @@
               pokemon.appendChild(img);
           });
 
-      }
-
-      function teste () {
-        
       }
     </script>
   </body>
