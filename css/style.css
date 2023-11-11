@@ -3,28 +3,22 @@ body {
   min-height: 100vh;
 }
 
-div#area {
-  display: inline-block;
-}
-
 div#pokemon {
-    display: inline-block;
-    /* background: rgb(0, 0, 0); */
-    color: rgb(0, 0, 0);
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
 }
 
 p {
-    font: normal 20pt Arial;
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
+  font: normal 20pt Arial;
+  color: rgb(0, 0, 0);
 }
 
 img {
-    background-color: #000000;
+  height: 70%;
 }
